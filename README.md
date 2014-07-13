@@ -28,6 +28,6 @@ Test
 ---
     curl http://<ip>:49153
 
-You should see a typical HTML response back from your node.js server depending on how yu configured it.
+You should see a typical HTML response back from your node.js server depending on how you configured it.
 
     <!DOCTYPE html><html><head><title>Express</title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Express</h1><p>Welcome to Express</p></body></html>
