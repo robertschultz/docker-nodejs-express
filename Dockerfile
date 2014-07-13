@@ -10,4 +10,4 @@ RUN npm install
 EXPOSE 3000
 
 # Replace this with your main "server" script file
-CMD [ "node", "app.js" ]
+CMD [ "bin/www" ]
