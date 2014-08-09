@@ -1,5 +1,5 @@
 Introduction
----
+----
 
 Docker configuration for a node.js related stack. This will allow you to create a node.js image to spin up a bare bones node.js stack using express and hogan.js as the templating engine.
 
