@@ -1,17 +1,17 @@
 Introduction
 ----
 
-Docker configuration for a node.js related stack. This will allow you to create a node.js image to spin up a bare bones node.js stack using express and hogan.js as the templating engine.
+Docker configuration for a node.js related stack with express. This will allow you to create a node.js image to spin up a bare bones node.js stack using express and hogan.js as the templating engine.
 
 Build Docker Image
 ---
-    docker build -t <yourname>/docker-nodejs .
+    docker build -t <yourname>/docker-nodejs-express .
 
 This will build a local Docker image that uses the base node image and configures npm and your working directory in the container.
 
 Run New Node Container
 ---
-    docker run -d -P <yourname>/docker-nodejs
+    docker run -d -P <yourname>/docker-nodejs-express
 
 This will initialize a new container and run your node application as a background daemon.
 
@@ -22,7 +22,7 @@ Container Port
 Docker will create and assign a random port to route calls from your host machine to your new node.js instance. You should see your new container here with a port mapping like below.
 
     CONTAINER ID        IMAGE                                    COMMAND             CREATED             STATUS              PORTS                     NAMES
-    f2e505d0f3d9        robertschultz/node-app:latest            bin/www             11 hours ago        Up 51 minutes       0.0.0.0:49153->3000/tcp   high_blackwell
+    f2e505d0f3d9        robertschultz/docker-nodejs-express:latest            bin/www             11 hours ago        Up 51 minutes       0.0.0.0:49153->3000/tcp   high_blackwell
 
 Test
 ---
